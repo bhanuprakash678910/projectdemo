@@ -1,0 +1,11 @@
+
+- name: to install package
+     package:
+        name: "{{ item }}"
+        state: present
+     loop:
+         - vim
+         - nano
+         - curl
+         - wget
+         - http
